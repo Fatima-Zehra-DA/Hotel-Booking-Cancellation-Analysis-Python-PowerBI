@@ -1,0 +1,32 @@
+# ==============================
+# Python Virtual Environment
+# ==============================
+DA-Hotel-Booking/
+
+# ==============================
+# Jupyter Notebook Checkpoints
+# ==============================
+.ipynb_checkpoints/
+
+# ==============================
+# Dataset / Data Folder
+# ==============================
+Data/
+
+# ==============================
+# Practice Notebooks
+# ==============================
+Notebooks/hotel_booking_analysis-Copy1.ipynb
+Notebooks/hotel_booking_analysis.ipynb
+
+# ==============================
+# Python Cache
+# ==============================
+__pycache__/
+*.py[cod]
+
+# ==============================
+# OS Files
+# ==============================
+.DS_Store
+Thumbs.db
