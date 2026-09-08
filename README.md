@@ -17,7 +17,6 @@ offer thorough business advice to address this problem.
 The analysis of hotel booking cancellations as well as other factors that have no bearing
 on their business and yearly revenue generation are the main topics of this report.
 
-
 ## Assumptions
 
 1.	No unusual occurrences between 2015 and 2017 will have a substantial impact on
@@ -41,6 +40,24 @@ on their business and yearly revenue generation are the main topics of this repo
 7.	Which booking channels and market segments have the highest cancellation rates? 
 8.	What types of customers are most likely to cancel their reservations?
 
+## Hypothesis
+
+1.	Higher ADR is associated with higher cancellation rates. 
+2.	Longer lead times are associated with higher cancellation rates. 
+3.	Cancellation rates differ by deposit type. 
+4.	Cancellation rates differ across booking channels and market segments. 
+5.	Cancellation rates differ between City Hotel and Resort Hotel. 
+6.	Customer characteristics and previous booking behaviour are associated with cancellation rates.
+
+## Tools
+
+- Excel
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
 
 
 ## Dataset
@@ -66,37 +83,34 @@ After excluding these columns, the analysis was performed using **119,390 record
 
 > **Note:** The dataset was not uploaded to this repository. Please download the original dataset from the source above if you want to reproduce the analysis.
 
+### Dataset Summary
 
-## Tools
+| Attribute | Description |
+|-----------|-------------|
+| Total Records | 119,390 |
+| Data Type | Hotel Booking |
+| Time Period | 2015–2017 |
+| Hotel Type | 2 (City Hotel,Resort Hotel) |
+| Number of Booking | 118898 |
+| Overall Cancellation | 44152|
+| Database | PostgreSQL |
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
 
-## Current Progress
 
-- [x] Data exploration
-- [x] Overall cancellation rate
-- [x] Cancellation rate by hotel type
-- [x] Cancellation rate by lead time
-- [x] Cancellation rate by deposit type
-- [ ] Investigate Non Refund cancellation anomaly
-- [ ] Cancellation rate by market segment
-- [ ] Cancellation rate by booking channel
-- [ ] Customer-level analysis
-- [ ] Business recommendations
-- [ ] Final report
 
-## Key Finding So Far
 
-Non Refund bookings show an exceptionally high cancellation rate
-of 99.36%, which is being investigated further before drawing
-business conclusions.
-
-## Project Status
-
-This project is currently under development.
-
+<!-- 
+Project overview ✅
+Business problem ✅
+Objectives ✅
+Research questions ✅
+Dataset ✅
+Tools & technologies ✅
+Data cleaning / preparation
+Analysis performed
+Key findings
+Business recommendations
+Project structure
+How to run the project
+Limitations / next steps 
+-->
