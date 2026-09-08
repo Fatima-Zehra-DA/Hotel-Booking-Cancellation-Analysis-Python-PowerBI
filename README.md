@@ -18,14 +18,30 @@ The analysis of hotel booking cancellations as well as other factors that have n
 on their business and yearly revenue generation are the main topics of this report.
 
 
+## Assumptions
 
-## Business Questions
+1.	No unusual occurrences between 2015 and 2017 will have a substantial impact on
+1.	the data used.
+2.	The information is still current and can be used to analyze a hotel's possible plans in
+3.	an efficient manner.
+4.	There are no unanticipated negatives to the hotel employing any advised technique.
+5.	The hotels are not currently using any of the suggested solutions.
+6.	The biggest factor affecting the effectiveness of earning income is booking
+7.	cancellations.
+8.	6. Cancellations result in vacant rooms for the booked length of time.
+9.	7. Clients make hotel reservations the same year they make cancellations.
 
-- What factors are associated with hotel booking cancellations?
-- How does cancellation rate vary by hotel type?
-- How does cancellation rate vary with lead time?
-- How does cancellation rate vary by deposit type?
-- Which booking channels and market segments have higher cancellation rates?
+## Research Question
+1.	What are the key factors associated with hotel booking cancellations?
+2.	How can hotels reduce booking cancellations and improve room occupancy and revenue?
+3.	How can the findings help hotels make better pricing and promotional decisions?
+4.	What is the overall cancellation rate, and how does it differ between City Hotel and Resort Hotel? 
+5.	How does cancellation rate vary with lead time? 
+6.	How does cancellation rate vary by deposit type? 
+7.	Which booking channels and market segments have the highest cancellation rates? 
+8.	What types of customers are most likely to cancel their reservations?
+
+
 
 ## Dataset
 
