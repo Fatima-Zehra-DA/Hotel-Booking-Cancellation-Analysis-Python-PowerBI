@@ -21,3 +21,14 @@ In this project, I used **Python, Pandas, Matplotlib, and Seaborn** to explore a
 * Why is the cancellation rate for **Non Refund bookings** unusually high?
 
 The analysis follows an exploratory approach, using summary tables and visualizations to identify patterns and areas requiring deeper investigation.
+
+## 🎯 Objectives
+
+* Measure the overall hotel booking cancellation rate.
+* Compare cancellation rates between **City Hotel** and **Resort Hotel**.
+* Analyze cancellation behavior across different **lead-time groups**.
+* Compare cancellation rates by **deposit type**.
+* Investigate the unusually high cancellation rate for **Non Refund** bookings.
+* Examine cancellation patterns across **distribution channels**.
+* Analyze cancellation rates across **market segments**.
+* Translate analytical findings into practical business observations.
