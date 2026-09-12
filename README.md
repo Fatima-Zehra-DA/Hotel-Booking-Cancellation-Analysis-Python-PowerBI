@@ -33,9 +33,10 @@ The analysis follows an exploratory approach, using summary tables and visualiza
 * Analyze cancellation rates across **market segments**.
 * Translate analytical findings into practical business observations.
 
-## 📊 Dataset
+## 📊 Dataset 
 
 The dataset contains hotel booking records with information about:
+
 
 * Hotel type
 * Booking status
@@ -53,6 +54,25 @@ The dataset contains hotel booking records with information about:
 * Special requests
 * Reservation status
 
+**Source:** Kaggle — Hotel Booking Demand Dataset
+
+**Original dataset:** [https://www.kaggle.com/datasets/mojtaba142/hotel-booking]
+
+### Dataset Preparation
+
+The original dataset contains **119,390 records and 36 columns**.
+
+Before analysis, the following four columns were excluded because they were not required for the business questions:
+
+* `name`
+* `email`
+* `phone-number`
+* `credit_card`
+
+After excluding these columns, the analysis was performed using **119,390 records and 32 columns**.
+
+
+
 ### Dataset Size
 
 | Stage                                                   |    Rows | Columns |
@@ -68,3 +88,4 @@ The notebook shows that the original dataset contains **119,390 rows and 32 colu
 The working dataset used for this project contains **32 columns** and does not include personally identifying guest fields such as names, email addresses, phone numbers, or credit-card information.
 
 The dataset is therefore used strictly for analytical and educational purposes.
+
