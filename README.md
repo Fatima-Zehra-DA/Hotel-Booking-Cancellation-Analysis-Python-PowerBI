@@ -327,3 +327,15 @@ The **99.36% cancellation rate for Non Refund bookings** is the most unusual pat
 ### 5. Unusual patterns require investigation
 
 Rather than assuming that a single variable explains cancellation behavior, the analysis investigates the Non Refund segment across additional dimensions such as hotel type, market segment, and distribution channel.
+
+# 📌 Business Recommendations
+
+Based on the exploratory findings, hotels could consider:
+
+* Monitoring **long-lead bookings** more closely for cancellation risk.
+* Evaluating cancellation patterns separately for **City and Resort Hotels**.
+* Investigating the operational/business process behind the unusually high **Non Refund cancellation rate**.
+* Examining high-risk combinations of **deposit type, market segment, and distribution channel**.
+* Using cancellation-risk patterns to support more informed booking and inventory-management strategies.
+
+These recommendations should be treated as **analytical considerations**, not causal conclusions, because this project focuses on exploratory analysis rather than predictive modeling or causal inference.
