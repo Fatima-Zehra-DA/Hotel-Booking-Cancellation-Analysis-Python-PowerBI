@@ -229,3 +229,19 @@ Deposit type produced one of the strongest differences in the analysis:
 
 However, the very high rate required further investigation rather than immediately assuming that the deposit policy itself causes cancellations.
 
+
+---
+
+# 🔎 Investigating the Non Refund Cancellation Rate
+
+Because the Non Refund category showed an unusual cancellation rate, the analysis went deeper instead of treating the result as a final conclusion.
+
+The investigation examined:
+
+1. Sample size
+2. Non Refund bookings directly
+3. Cancellation rate by hotel type
+4. Cancellation rate by market segment
+5. Cancellation rate by distribution channel
+
+This is an important analytical step because an unusually high percentage should be investigated before drawing a business conclusion.
