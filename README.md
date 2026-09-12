@@ -146,3 +146,28 @@ df = df[df['adr'] < 5000]
 
 This reduced the analysis dataset from **118,898 to 118,897 rows**.
 
+---
+
+# 📈 Analysis & Findings
+
+## 1. Overall Cancellation Rate
+
+The final dataset contains:
+
+* **74,745 bookings not cancelled**
+* **44,152 cancelled bookings**
+
+This results in an overall cancellation rate of:
+
+### **37.13%**
+
+| Booking Status | Bookings | Percentage |
+| -------------- | -------: | ---------: |
+| Not Cancelled  |   74,745 |     62.87% |
+| Cancelled      |   44,152 |     37.13% |
+
+### Key Observation
+
+More than one-third of bookings in the dataset were cancelled, making cancellation behavior an important area for further investigation.
+
+
