@@ -292,3 +292,12 @@ The distribution-channel analysis compares:
 The analysis uses cancellation rate rather than simply comparing the number of cancellations, allowing channels with different booking volumes to be compared more fairly.
 
 ---
+
+
+## 6. Overall Cancellation Rate by Market Segment
+
+The project also examines cancellation rates across market segments.
+
+The purpose is to understand whether different customer acquisition or booking segments exhibit different cancellation behavior.
+
+This analysis provides another dimension for identifying potentially higher-risk booking groups and complements the distribution-channel analysis.
