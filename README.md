@@ -245,3 +245,20 @@ The investigation examined:
 5. Cancellation rate by distribution channel
 
 This is an important analytical step because an unusually high percentage should be investigated before drawing a business conclusion.
+
+
+### Non Refund Sample Size
+
+There are **14,572 Non Refund bookings**, of which **14,479 were cancelled** and only **93 were not cancelled**.
+
+### Market Segment Investigation
+
+Within the Non Refund subset, the notebook shows extremely high cancellation rates across the examined market segments:
+
+| Market Segment | Bookings | Cancelled | Cancellation Rate |
+| -------------- | -------: | --------: | ----------------: |
+| Offline TA/TO  |    4,991 |     4,988 |        **99.94%** |
+| Groups         |    9,172 |     9,110 |        **99.32%** |
+| Online TA      |       56 |        53 |        **94.64%** |
+| Corporate      |      334 |       312 |        **93.41%** |
+| Direct         |       19 |        16 |        **84.21%** |
