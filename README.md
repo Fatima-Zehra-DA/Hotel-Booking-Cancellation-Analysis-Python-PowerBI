@@ -102,3 +102,47 @@ The dataset is therefore used strictly for analytical and educational purposes.
 | **Git & GitHub**     | Version control and project sharing           |
 
 
+## 🔍 Data Preparation
+
+The analysis began with exploratory inspection of the dataset structure, data types, categorical variables, missing values, and numerical distributions.
+
+### Data Cleaning Steps
+
+#### 1. Datatype Conversion
+
+`reservation_status_date` was converted from a string to a datetime datatype.
+
+#### 2. Missing Value Analysis
+
+Missing values were identified in:
+
+* `children`
+* `country`
+* `agent`
+* `company`
+
+The notebook identified:
+
+* 4 missing values in `children`
+* 488 missing values in `country`
+* 16,340 missing values in `agent`
+* 112,593 missing values in `company`
+
+#### 3. Removing High-Missing Columns
+
+The `agent` and `company` columns were removed because of their substantial number of missing values.
+
+Remaining missing rows were then removed from the dataset.
+
+#### 4. ADR Outlier Treatment
+
+An ADR box plot was used to inspect extreme values.
+
+The analysis identified an extreme ADR value and filtered the dataset using:
+
+```python
+df = df[df['adr'] < 5000]
+```
+
+This reduced the analysis dataset from **118,898 to 118,897 rows**.
+
