@@ -190,3 +190,25 @@ The difference is **13.73 percentage points**.
 
 This suggests that cancellation behavior may be influenced by the type of hotel, although this analysis alone does not establish why the difference exists.
 
+---
+
+## 3. Cancellation Rate by Lead Time
+
+Lead time was grouped into:
+
+* **0–7 days**
+* **8–30 days**
+* **31–90 days**
+* **91–180 days**
+* **180+ days**
+
+The analysis examines whether bookings made further in advance are associated with higher cancellation risk.
+
+### Key Observation
+
+The analysis indicates an association between **longer lead times and higher cancellation risk**.
+
+From a business perspective, long-lead bookings deserve particular attention because they represent a higher cancellation-risk segment.
+
+## However, the analysis identifies an **association rather than proving that longer lead time directly causes cancellations**.
+
