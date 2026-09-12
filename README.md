@@ -262,3 +262,11 @@ Within the Non Refund subset, the notebook shows extremely high cancellation rat
 | Online TA      |       56 |        53 |        **94.64%** |
 | Corporate      |      334 |       312 |        **93.41%** |
 | Direct         |       19 |        16 |        **84.21%** |
+
+### Analytical Interpretation
+
+The Non Refund result should therefore be treated as an **investigation finding**, not simply as evidence that non-refundable policies cause cancellations.
+
+The pattern suggests that the Non Refund category is associated with a very unusual booking profile, and additional business context would be required to understand why these bookings are recorded as cancelled.
+
+---
