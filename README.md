@@ -212,3 +212,20 @@ From a business perspective, long-lead bookings deserve particular attention bec
 
 ## However, the analysis identifies an **association rather than proving that longer lead time directly causes cancellations**.
 
+
+## 4. Cancellation Rate by Deposit Type
+
+Deposit type produced one of the strongest differences in the analysis:
+
+| Deposit Type | Bookings | Cancelled | Cancellation Rate |
+| ------------ | -------: | --------: | ----------------: |
+| Refundable   |      162 |        36 |        **22.22%** |
+| No Deposit   |  104,163 |    29,637 |        **28.45%** |
+| Non Refund   |   14,572 |    14,479 |        **99.36%** |
+
+### Key Observation
+
+**Non Refund bookings have an exceptionally high cancellation rate of 99.36%.**
+
+However, the very high rate required further investigation rather than immediately assuming that the deposit policy itself causes cancellations.
+
