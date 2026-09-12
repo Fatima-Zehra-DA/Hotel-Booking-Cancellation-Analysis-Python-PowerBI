@@ -89,3 +89,16 @@ The working dataset used for this project contains **32 columns** and does not i
 
 The dataset is therefore used strictly for analytical and educational purposes.
 
+
+## 🛠️ Tools & Technologies
+
+| Tool                 | Purpose                                       |
+| -------------------- | --------------------------------------------- |
+| **Python**           | Data analysis                                 |
+| **Pandas**           | Data cleaning, transformation and aggregation |
+| **Matplotlib**       | Data visualization                            |
+| **Seaborn**          | Statistical visualization                     |
+| **Jupyter Notebook** | Analysis environment                          |
+| **Git & GitHub**     | Version control and project sharing           |
+
+
