@@ -32,3 +32,39 @@ The analysis follows an exploratory approach, using summary tables and visualiza
 * Examine cancellation patterns across **distribution channels**.
 * Analyze cancellation rates across **market segments**.
 * Translate analytical findings into practical business observations.
+
+## 📊 Dataset
+
+The dataset contains hotel booking records with information about:
+
+* Hotel type
+* Booking status
+* Lead time
+* Arrival dates
+* Length of stay
+* Guest information
+* Market segment
+* Distribution channel
+* Previous cancellations
+* Room types
+* Deposit type
+* Customer type
+* Average Daily Rate (ADR)
+* Special requests
+* Reservation status
+
+### Dataset Size
+
+| Stage                                                   |    Rows | Columns |
+| ------------------------------------------------------- | ------: | ------: |
+| Original dataset                                        | 119,390 |      32 |
+| After removing `agent` and `company` and missing values | 118,898 |      30 |
+| Final analysis dataset after ADR outlier removal        | 118,897 |      30 |
+
+The notebook shows that the original dataset contains **119,390 rows and 32 columns**.
+
+### Data Privacy
+
+The working dataset used for this project contains **32 columns** and does not include personally identifying guest fields such as names, email addresses, phone numbers, or credit-card information.
+
+The dataset is therefore used strictly for analytical and educational purposes.
