@@ -301,3 +301,29 @@ The project also examines cancellation rates across market segments.
 The purpose is to understand whether different customer acquisition or booking segments exhibit different cancellation behavior.
 
 This analysis provides another dimension for identifying potentially higher-risk booking groups and complements the distribution-channel analysis.
+
+---
+
+# 💡 Business Insights
+
+Based on the exploratory analysis, several patterns stand out:
+
+### 1. Cancellation is a significant operational issue
+
+With an overall cancellation rate of **37.13%**, more than one in three bookings in the final dataset were cancelled.
+
+### 2. City Hotels show higher cancellation risk
+
+City Hotel bookings have a cancellation rate of **41.71%**, compared with **27.98%** for Resort Hotels.
+
+### 3. Longer lead times are associated with higher cancellation risk
+
+Bookings made further in advance appear to carry greater cancellation risk, making long-lead reservations a useful segment for monitoring.
+
+### 4. Deposit type shows an exceptionally strong relationship with cancellation
+
+The **99.36% cancellation rate for Non Refund bookings** is the most unusual pattern identified in the project.
+
+### 5. Unusual patterns require investigation
+
+Rather than assuming that a single variable explains cancellation behavior, the analysis investigates the Non Refund segment across additional dimensions such as hotel type, market segment, and distribution channel.
