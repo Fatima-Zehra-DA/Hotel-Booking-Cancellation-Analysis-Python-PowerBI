@@ -6,6 +6,9 @@ The analysis examines how cancellation rates vary across **hotel types, lead tim
 
 The goal is to move beyond overall cancellation percentages and identify patterns that could help hotels better understand cancellation risk.
 
+## Project Status
+🚧 In Progress
+
 ## 📌 Project Overview
 
 Hotel cancellations can affect room availability, planning, and operational decision-making.
@@ -268,5 +271,24 @@ Within the Non Refund subset, the notebook shows extremely high cancellation rat
 The Non Refund result should therefore be treated as an **investigation finding**, not simply as evidence that non-refundable policies cause cancellations.
 
 The pattern suggests that the Non Refund category is associated with a very unusual booking profile, and additional business context would be required to understand why these bookings are recorded as cancelled.
+
+---
+## 5. Cancellation Rate by Distribution Channel
+
+The analysis also examines booking outcomes across distribution channels.
+
+This helps identify whether cancellation behavior differs depending on how reservations enter the hotel booking system.
+
+### Analytical Focus
+
+The distribution-channel analysis compares:
+
+* Direct
+* Corporate
+* TA/TO
+* GDS
+* Undefined
+
+The analysis uses cancellation rate rather than simply comparing the number of cancellations, allowing channels with different booking volumes to be compared more fairly.
 
 ---
