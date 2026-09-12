@@ -171,3 +171,22 @@ This results in an overall cancellation rate of:
 More than one-third of bookings in the dataset were cancelled, making cancellation behavior an important area for further investigation.
 
 
+---
+
+## 2. Cancellation Rate by Hotel Type
+
+Cancellation rates differ noticeably between the two hotel types:
+
+| Hotel Type   | Cancellation Rate |
+| ------------ | ----------------: |
+| City Hotel   |        **41.71%** |
+| Resort Hotel |        **27.98%** |
+
+The difference is **13.73 percentage points**.
+
+### Key Observation
+
+**City Hotel bookings have a substantially higher cancellation rate than Resort Hotel bookings.**
+
+This suggests that cancellation behavior may be influenced by the type of hotel, although this analysis alone does not establish why the difference exists.
+
