@@ -364,3 +364,7 @@ Hotel Booking Cancellation Analysis/
 ├── README.md
 └── requirements.txt
 ```
+
+> **Note:** The dataset is excluded from GitHub through `.gitignore`. The notebook can be used with the dataset placed in the appropriate local `Data/` directory.
+
+---
