@@ -368,3 +368,23 @@ Hotel Booking Cancellation Analysis/
 > **Note:** The dataset is excluded from GitHub through `.gitignore`. The notebook can be used with the dataset placed in the appropriate local `Data/` directory.
 
 ---
+
+
+
+
+
+
+## 👩‍💻 Author
+
+**Fatima Zehra**
+
+Aspiring Data Analyst focused on transforming data into meaningful business insights.
+
+### Connect with me
+
+* **GitHub:** [Fatima-Zehra-DA](https://github.com/Fatima-Zehra-DA)
+* **LinkedIn:** [Fatima Zehra](https://www.linkedin.com/in/fatima-zehra-308b85358/)
+* **Tableau Public:** [Fatima Zehra](https://public.tableau.com/app/profile/fatima.zehra7709/vizzes)
+* **Kaggle:** [Fatima Zehra](https://www.kaggle.com/fatimazehra2305/)
+
+---
