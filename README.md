@@ -339,3 +339,27 @@ Based on the exploratory findings, hotels could consider:
 * Using cancellation-risk patterns to support more informed booking and inventory-management strategies.
 
 These recommendations should be treated as **analytical considerations**, not causal conclusions, because this project focuses on exploratory analysis rather than predictive modeling or causal inference.
+
+
+---
+
+# 📁 Project Structure
+
+```text
+Hotel Booking Cancellation Analysis/
+│
+├── Data/
+│   └── hotel_bookings 2.csv
+│
+├── Images/
+│   └── analysis visualizations
+│
+├── Notebooks/
+│   └── Hotel_Booking_Cancellation_Analysis.ipynb
+│
+├── Report/
+│   └── Report.docx
+│
+├── .gitignore
+├── README.md
+└── requirements.txt
