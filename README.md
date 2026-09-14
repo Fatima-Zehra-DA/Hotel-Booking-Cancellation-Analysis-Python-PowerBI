@@ -429,6 +429,33 @@ import seaborn as sns
 --- 
 
 
+# 📊 Project Workflow
+
+```text
+Raw Dataset
+     ↓
+Data Inspection
+     ↓
+Data Cleaning
+     ↓
+Missing Value Treatment
+     ↓
+Outlier Detection
+     ↓
+Feature Grouping
+     ↓
+Exploratory Data Analysis
+     ↓
+Visualization
+     ↓
+Pattern Identification
+     ↓
+Business Interpretation
+```
+
+---
+
+
 ## 👩‍💻 Author
 
 **Fatima Zehra**
