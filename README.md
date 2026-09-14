@@ -417,7 +417,16 @@ Open:
 Notebooks/Hotel_Booking_Cancellation_Analysis.ipynb
 ```
 
+---
 
+# 📚 Key Python Libraries
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+```
+--- 
 
 
 ## 👩‍💻 Author
