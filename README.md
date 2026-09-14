@@ -365,11 +365,57 @@ Hotel Booking Cancellation Analysis/
 └── requirements.txt
 ```
 
+
 > **Note:** The dataset is excluded from GitHub through `.gitignore`. The notebook can be used with the dataset placed in the appropriate local `Data/` directory.
 
 ---
 
 
+# ▶️ How to Run the Project
+
+### 1. Clone the repository
+
+```bash
+git clone <your-repository-url>
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd "Hotel Booking Cancellation Analysis"
+```
+
+### 3. Create a virtual environment
+
+```bash
+python -m venv DA-Hotel-Booking
+```
+
+### 4. Activate the environment
+
+**Windows:**
+
+```bash
+DA-Hotel-Booking\Scripts\activate
+```
+
+### 5. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 6. Launch Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+Open:
+
+```text
+Notebooks/Hotel_Booking_Cancellation_Analysis.ipynb
+```
 
 
 
