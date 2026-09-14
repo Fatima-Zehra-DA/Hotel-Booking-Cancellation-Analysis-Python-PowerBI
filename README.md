@@ -455,6 +455,22 @@ Business Interpretation
 
 ---
 
+---
+
+# 🎯 Conclusion
+
+This project demonstrates an end-to-end exploratory data analysis workflow for understanding hotel booking cancellations.
+
+The analysis shows that cancellation behavior varies across **hotel type, lead time, deposit type, distribution channel, and market segment**.
+
+The most notable finding is the exceptionally high cancellation rate among **Non Refund bookings**, which led to a deeper investigation rather than being accepted at face value.
+
+Overall, the project focuses on an important principle of data analysis:
+
+> **A high-level metric is often the starting point of an investigation, not the final answer.**
+
+---
+
 
 ## 👩‍💻 Author
 
