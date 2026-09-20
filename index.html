@@ -80,10 +80,27 @@
             font-weight: 600;
 
             transition: 0.3s;
+            position: relative;
         }
 
         .nav-links a:hover {
             color: #a52b2b;
+        }
+
+        .nav-links a:hover , .nav-links a.active {
+            color: #9b2226; /* Matches your accent red */
+            font-weight: 600;
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 12px;
+            right: 12px;
+            height: 2px;
+            background-color: #9b2226;
+            border-radius: 2px;
         }
 
 
@@ -97,13 +114,23 @@
             display: flex;
             align-items: center;
 
-            background:
+            /* background:
                 linear-gradient(
                     135deg,
                     #7f2020 0%,
                     #a52b2b 55%,
                     #b83a3a 100%
-                );
+                ); */
+            background: 
+                linear-gradient(
+                rgba(155, 34, 38, 0.7), 
+                rgba(110, 18, 22, 0.94)
+                ),
+            url('Images/Hotel.jpg');
+        /* 2. Sizing and positioning */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
 
             color: white;
 
@@ -1075,6 +1102,45 @@
 
 </footer>
 
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Select all navigation links that point to an ID (e.g., href="#overview")
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+    
+    // Select all target sections corresponding to those links
+    const sections = Array.from(navLinks).map(link => {
+      const id = link.getAttribute('href').substring(1);
+      return document.getElementById(id);
+    }).filter(section => section !== null);
+
+    // Track visible sections on scroll
+    const observerOptions = {
+      root: null,
+      // Triggers when section reaches top 30% of the viewport
+      rootMargin: '-20% 0px -70% 0px',
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const currentId = entry.target.getAttribute('id');
+          
+          navLinks.forEach(link => {
+            if (link.getAttribute('href') === `#${currentId}`) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
+          });
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => observer.observe(section));
+  });
+</script>
 
 </body>
 </html>
