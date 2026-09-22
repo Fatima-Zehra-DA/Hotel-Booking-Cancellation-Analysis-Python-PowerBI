@@ -65,12 +65,12 @@ The dataset contains hotel booking records with information about:
 
 The original dataset contains **119,390 records and 36 columns**.
 
-Before analysis, the following four columns were excluded because they were not required for the business questions:
-
-* `name`
-* `email`
-* `phone-number`
-* `credit_card`
+> [!NOTE]
+> Before analysis, the following four columns were excluded because they were not required for the business questions:
+> * `name`
+> * `email`
+> * `phone-number`
+> * `credit_card`
 
 After excluding these columns, the analysis was performed using **119,390 records and 32 columns**.
 
