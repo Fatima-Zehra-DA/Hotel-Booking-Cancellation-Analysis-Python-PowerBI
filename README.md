@@ -366,7 +366,8 @@ Hotel Booking Cancellation Analysis/
 ```
 
 
-> **Note:** The dataset is excluded from GitHub through `.gitignore`. The notebook can be used with the dataset placed in the appropriate local `Data/` directory.
+> [!NOTE]
+> The dataset is excluded from GitHub through `.gitignore`. The notebook can be used with the dataset placed in the appropriate local `Data/` directory.
 
 ---
 
@@ -455,7 +456,6 @@ Business Interpretation
 
 ---
 
----
 
 # 🎯 Conclusion
 
@@ -471,6 +471,33 @@ Overall, the project focuses on an important principle of data analysis:
 
 ---
 
+<table>
+  <tr>
+    <td width="50%" valign="top" >
+      <h3>◈ Overview</h3>
+      <img src="Images/1-overview.png">
+    </td>
+    <td width="50%" valign="top">
+      <h3>◈ Cancellation Drivers</h3>
+      <img src="Images/2-cancellation-drivers.png">
+    </td>
+  </tr>
+   <tr>
+    <td width="50%" valign="top" >
+      <h3>◈ Channel and Customer Analysis</h3>
+      <img src="Images/3-channel-customer-analysis.png">
+    </td>
+    <td width="50%" valign="top">
+      <h3>◈ Booking and Pricing Insights</h3>
+      <img src="Images/4-Booking-Pricing-Insights.png">
+  </tr>
+  <tr>
+   <td width="100%" valign="top">
+      <h3>◈ Key Insights</h3>
+      <img src="Images/5-key-insights.png">
+    </td>
+  </tr>
+</table>
 
 ## 👩‍💻 Author
 
@@ -480,7 +507,7 @@ Aspiring Data Analyst focused on transforming data into meaningful business insi
 
 ### Connect with me
 
-* **GitHub:** [Fatima-Zehra-DA](https://github.com/Fatima-Zehra-DA)
+* **GitHub Page:** [Fatima-Zehra-DA](https://fatima-zehra-da.github.io/Hotel-Booking-Cancellation-Analysis-Python-PowerBI/?utm_source=chatgpt.com)
 * **LinkedIn:** [Fatima Zehra](https://www.linkedin.com/in/fatima-zehra-308b85358/)
 * **Tableau Public:** [Fatima Zehra](https://public.tableau.com/app/profile/fatima.zehra7709/vizzes)
 * **Kaggle:** [Fatima Zehra](https://www.kaggle.com/fatimazehra2305/)
