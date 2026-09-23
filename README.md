@@ -475,28 +475,28 @@ Overall, the project focuses on an important principle of data analysis:
   <tr>
     <td width="50%" valign="top" >
       <h3>◈ Overview</h3>
-      <img src="Images/1-overview.png">
+      <img src="Images/1-overview.png" width="100%">
     </td>
     <td width="50%" valign="top">
       <h3>◈ Cancellation Drivers</h3>
-      <img src="Images/2-cancellation-drivers.png">
+      <img src="Images/2-cancellation-drivers.png" width="100%">
     </td>
   </tr>
    <tr>
     <td width="50%" valign="top" >
       <h3>◈ Channel and Customer Analysis</h3>
-      <img src="Images/3-channel-customer-analysis.png">
+      <img src="Images/3-channel-customer-analysis.png" width="100%">
     </td>
     <td width="50%" valign="top">
       <h3>◈ Booking and Pricing Insights</h3>
-      <img src="Images/4-Booking-Pricing-Insights.png">
-  </tr>
-  <tr>
-   <td width="100%" valign="top">
+      <img src="Images/4-Booking-Pricing-Insights.png" width="100%">
+    </tr>
+    <tr>
+     <td colspan="2" width="100%" valign="top">
       <h3>◈ Key Insights</h3>
-      <img src="Images/5-key-insights.png">
-    </td>
-  </tr>
+      <img src="Images/5-key-insights.png" width="100%">
+     </td>
+    </tr>
 </table>
 
 ---
