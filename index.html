@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hotel Booking Cancellation Analysis | Fatima Zehra</title>
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Hotel Booking Cancellation Analysis using Python and Power BI by Fatima Zehra.">
+
+    <title>
+        Hotel Booking Cancellation Analysis | Fatima Zehra
+    </title>
+
 
     <style>
 
-        /* ================================
-           GLOBAL
-        ================================= */
+        /* =====================================================
+           RESET
+        ===================================================== */
 
         * {
             margin: 0;
@@ -23,9 +33,17 @@
         }
 
         body {
-            font-family: "Segoe UI", Arial, sans-serif;
+
+            font-family:
+                "Segoe UI",
+                Arial,
+                Helvetica,
+                sans-serif;
+
             background: #f5f5f5;
+
             color: #292929;
+
             line-height: 1.6;
         }
 
@@ -33,61 +51,126 @@
             text-decoration: none;
         }
 
+        img {
+            max-width: 100%;
+        }
+
+
+        /* =====================================================
+           VARIABLES
+        ===================================================== */
+
+        :root {
+
+            --burgundy: #a52b2b;
+
+            --dark-burgundy: #7f2020;
+
+            --burgundy-light: #b83a3a;
+
+            --text-dark: #292929;
+
+            --text-medium: #666666;
+
+            --text-light: #888888;
+
+            --background: #f5f5f5;
+
+            --white: #ffffff;
+
+            --border: #e2e2e2;
+
+            --soft-red: #f8eaea;
+        }
+
+
+        /* =====================================================
+           GLOBAL CONTAINER
+        ===================================================== */
+
         .container {
+
             width: min(1180px, 90%);
+
             margin: auto;
         }
 
 
-        /* ================================
-           NAVBAR
-        ================================= */
+        /* =====================================================
+           NAVIGATION
+        ===================================================== */
 
         .navbar {
+
             position: sticky;
+
             top: 0;
+
             z-index: 1000;
 
-            background: rgba(255,255,255,0.96);
-            border-bottom: 1px solid #e4e4e4;
+            background:
+                rgba(255,255,255,0.96);
 
-            backdrop-filter: blur(10px);
+            border-bottom:
+                1px solid var(--border);
+
+            backdrop-filter:
+                blur(12px);
         }
 
+
         .nav-content {
+
             height: 70px;
 
             display: flex;
+
             align-items: center;
+
             justify-content: space-between;
         }
 
+
         .logo {
-            color: #9f2929;
-            font-size: 20px;
+
+            color: var(--burgundy);
+
+            font-size: 18px;
+
             font-weight: 700;
-            letter-spacing: 0.5px;
+
+            letter-spacing: 0.8px;
         }
+
 
         .nav-links {
+
             display: flex;
-            gap: 30px;
+
+            gap : 30px;
         }
 
+
         .nav-links a {
+
             color: #555;
-            font-size: 14px;
+
+            font-size: 13px;
+
             font-weight: 600;
 
-            transition: 0.3s;
+            transition:
+                color 0.25s ease;
             position: relative;
         }
 
+
         .nav-links a:hover {
-            color: #a52b2b;
+
+            color: var(--burgundy);
         }
 
-        .nav-links a:hover , .nav-links a.active {
+         .nav-links a:hover , .nav-links a.active {
             color: #9b2226; /* Matches your accent red */
             font-weight: 600;
         }
@@ -105,24 +188,19 @@
         }
 
 
-        /* ================================
+        /* =====================================================
            HERO
-        ================================= */
+        ===================================================== */
 
         .hero {
+
             min-height: 650px;
 
             display: flex;
+
             align-items: center;
 
-            /* background:
-                linear-gradient(
-                    135deg,
-                    #7f2020 0%,
-                    #a52b2b 55%,
-                    #b83a3a 100%
-                ); */
-            background: 
+             background: 
                 linear-gradient(
                 rgba(155, 34, 38, 0.7), 
                 rgba(110, 18, 22, 0.94)
@@ -133,62 +211,107 @@
             background-position: center;
             background-repeat: no-repeat;
 
+            position: relative;
+
+            overflow: hidden;
+
             color: white;
 
-            position: relative;
-            overflow: hidden;
+            /* background:
+
+                linear-gradient(
+                    135deg,
+                    var(--dark-burgundy),
+                    var(--burgundy) 55%,
+                    var(--burgundy-light)
+                ); */
         }
 
+
+        /* Decorative circles */
+
         .hero::before {
+
             content: "";
 
             position: absolute;
 
-            width: 500px;
-            height: 500px;
+            width: 600px;
 
-            border: 1px solid rgba(255,255,255,0.12);
+            height: 600px;
+
+            border:
+                1px solid rgba(255,255,255,0.10);
+
             border-radius: 50%;
 
-            right: -150px;
-            top: -150px;
+            right: -200px;
+
+            top: -220px;
         }
 
+
         .hero::after {
+
             content: "";
 
             position: absolute;
 
             width: 350px;
+
             height: 350px;
 
-            border: 1px solid rgba(255,255,255,0.10);
+            border:
+                1px solid rgba(255,255,255,0.08);
+
             border-radius: 50%;
 
-            right: 50px;
-            bottom: -220px;
+            right: 120px;
+
+            bottom: -260px;
         }
+
 
         .hero-content {
+
             position: relative;
+
             z-index: 2;
 
-            max-width: 800px;
+            max-width: 850px;
         }
 
-        .eyebrow {
-            font-size: 13px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+
+        .hero-label {
+
+            display: inline-block;
 
             margin-bottom: 20px;
 
-            color: #f8dede;
+            padding: 7px 13px;
+
+            border:
+                1px solid rgba(255,255,255,0.25);
+
+            border-radius: 30px;
+
+            color: #f8dddd;
+
+            font-size: 12px;
+
             font-weight: 600;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
         }
 
+
         .hero h1 {
-            font-size: clamp(42px, 6vw, 72px);
+
+            font-size:
+                clamp(42px, 6vw, 72px);
+
             line-height: 1.05;
 
             margin-bottom: 25px;
@@ -196,411 +319,918 @@
             font-weight: 700;
         }
 
+
         .hero h1 span {
-            color: #ffe5e5;
+
+            color: #ffe1e1;
         }
 
-        .hero-description {
-            max-width: 680px;
 
-            font-size: 19px;
+        .hero-description {
+
+            max-width: 720px;
+
             color: #f8eaea;
+
+            font-size: 18px;
 
             margin-bottom: 35px;
         }
 
-        .hero-buttons {
+
+        .hero-meta {
+
             display: flex;
-            gap: 15px;
+
             flex-wrap: wrap;
+
+            gap: 10px;
+
+            margin-bottom: 35px;
         }
 
+
+        .hero-tag {
+
+            padding:
+                7px 14px;
+
+            border-radius: 5px;
+
+            background:
+                rgba(255,255,255,0.10);
+
+            border:
+                1px solid rgba(255,255,255,0.14);
+
+            font-size: 12px;
+
+            color: #fff;
+        }
+
+
+        .hero-buttons {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 14px;
+        }
+
+
         .btn {
-            padding: 13px 24px;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding:
+                13px 23px;
 
             border-radius: 6px;
 
-            font-size: 14px;
-            font-weight: 600;
+            font-size: 13px;
 
-            transition: 0.3s;
+            font-weight: 700;
+
+            transition:
+                all 0.25s ease;
         }
+
 
         .btn-primary {
+
             background: white;
-            color: #952727;
+
+            color: var(--burgundy);
         }
+
 
         .btn-primary:hover {
-            transform: translateY(-2px);
-            background: #f6f6f6;
+
+            transform:
+                translateY(-2px);
         }
+
 
         .btn-outline {
-            border: 1px solid rgba(255,255,255,0.6);
+
             color: white;
+
+            border:
+                1px solid rgba(255,255,255,0.55);
         }
+
 
         .btn-outline:hover {
-            background: rgba(255,255,255,0.1);
+
+            background:
+                rgba(255,255,255,0.10);
         }
 
 
-        /* ================================
+        /* =====================================================
            KPI SECTION
-        ================================= */
+        ===================================================== */
 
         .kpi-section {
-            margin-top: -70px;
+
             position: relative;
+
             z-index: 10;
+
+            margin-top: -65px;
         }
 
+
         .kpi-grid {
+
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
             gap: 18px;
         }
 
+
         .kpi-card {
-            background: white;
+
+            position: relative;
 
             padding: 25px;
 
+            background: white;
+
+            border:
+                1px solid var(--border);
+
             border-radius: 8px;
 
-            border: 1px solid #e8e8e8;
-
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            box-shadow:
+                0 12px 35px
+                rgba(0,0,0,0.08);
         }
+
+
+        .kpi-icon {
+
+            position: absolute;
+
+            top: 20px;
+
+            right: 20px;
+
+            width: 34px;
+
+            height: 34px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 6px;
+
+            background:
+                var(--soft-red);
+
+            color:
+                var(--burgundy);
+
+            font-size: 16px;
+        }
+
 
         .kpi-label {
-            color: #777;
-            font-size: 13px;
-            margin-bottom: 5px;
+
+            color: var(--text-medium);
+
+            font-size: 12px;
+
+            font-weight: 600;
+
+            text-transform: uppercase;
+
+            letter-spacing: 0.6px;
         }
 
+
         .kpi-value {
-            color: #9f2929;
-            font-size: 31px;
+
+            margin-top: 6px;
+
+            color: var(--burgundy);
+
+            font-size: 32px;
+
             font-weight: 700;
         }
 
-        .kpi-description {
-            color: #999;
-            font-size: 12px;
-            margin-top: 5px;
+
+        .kpi-note {
+
+            margin-top: 4px;
+
+            color: var(--text-light);
+
+            font-size: 11px;
         }
 
 
-        /* ================================
-           GENERAL SECTIONS
-        ================================= */
+        /* =====================================================
+           SECTIONS
+        ===================================================== */
 
         section {
-            padding: 100px 0;
+
+            padding:
+                100px 0;
         }
+
 
         .section-heading {
+
+            max-width: 720px;
+
+            margin:
+                0 auto 55px;
+
             text-align: center;
-            max-width: 700px;
-            margin: 0 auto 55px;
         }
 
-        .section-heading span {
-            color: #a52b2b;
 
-            font-size: 12px;
+        .section-label {
+
+            color:
+                var(--burgundy);
+
+            font-size: 11px;
+
             font-weight: 700;
 
             letter-spacing: 2px;
+
             text-transform: uppercase;
         }
 
+
         .section-heading h2 {
-            margin-top: 10px;
+
+            margin-top: 9px;
+
+            color:
+                var(--text-dark);
 
             font-size: 38px;
-            color: #292929;
+
+            line-height: 1.2;
         }
+
 
         .section-heading p {
-            margin-top: 15px;
-            color: #707070;
+
+            margin-top: 14px;
+
+            color:
+                var(--text-medium);
+
+            font-size: 15px;
         }
 
 
-        /* ================================
+        /* =====================================================
            PROJECT OVERVIEW
-        ================================= */
+        ===================================================== */
 
         .overview {
-            background: #f5f5f5;
+
+            background:
+                var(--background);
         }
 
+
         .overview-grid {
+
             display: grid;
 
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 22px;
+        }
+
+
+        .info-card {
+
+            padding: 32px;
+
+            background: white;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 8px;
+        }
+
+
+        .info-card h3 {
+
+            margin-bottom: 12px;
+
+            color:
+                var(--burgundy);
+
+            font-size: 19px;
+        }
+
+
+        .info-card p {
+
+            color:
+                var(--text-medium);
+
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           WORKFLOW
+        ===================================================== */
+
+        .workflow {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 10px;
+
+            margin-top: 28px;
+        }
+
+
+        .workflow-step {
+
+            padding:
+                11px 17px;
+
+            background: white;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 5px;
+
+            color: #555;
+
+            font-size: 12px;
+
+            font-weight: 600;
+        }
+
+
+        .workflow-arrow {
+
+            color:
+                var(--burgundy);
+
+            font-weight: 700;
+        }
+
+
+        /* =====================================================
+           DASHBOARD GALLERY
+        ===================================================== */
+
+        .dashboards {
+
+            background: white;
+        }
+
+
+        .dashboard-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
 
             gap: 25px;
         }
 
-        .info-card {
+
+        .dashboard-card {
+
+            overflow: hidden;
+
             background: white;
 
-            padding: 35px;
+            border:
+                1px solid var(--border);
 
-            border-radius: 8px;
+            border-radius: 9px;
 
-            border: 1px solid #e6e6e6;
-        }
+            box-shadow:
+                0 8px 25px
+                rgba(0,0,0,0.06);
 
-        .info-card h3 {
-            color: #a52b2b;
-            margin-bottom: 15px;
-        }
-
-        .info-card p {
-            color: #666;
-        }
-
-        .workflow {
-            margin-top: 25px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .workflow-step {
-            background: #fff;
-
-            border: 1px solid #ddd;
-
-            padding: 12px 18px;
-
-            border-radius: 5px;
-
-            font-size: 13px;
-            font-weight: 600;
-        }
-
-        .arrow {
-            color: #a52b2b;
-            font-weight: bold;
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
         }
 
 
-        /* ================================
-           DASHBOARD PREVIEW
-        ================================= */
+        .dashboard-card:hover {
 
-        .dashboard-section {
-            background: white;
+            transform:
+                translateY(-4px);
+
+            box-shadow:
+                0 15px 35px
+                rgba(0,0,0,0.10);
         }
 
-        .dashboard-preview {
-            background: #f3f3f3;
 
-            padding: 15px;
+        .dashboard-image {
 
-            border-radius: 10px;
+            background:
+                #eeeeee;
 
-            border: 1px solid #ddd;
+            aspect-ratio:
+                16 / 9;
 
-            box-shadow: 0 15px 40px rgba(0,0,0,0.10);
+            overflow: hidden;
         }
 
-        .dashboard-preview img {
+
+        .dashboard-image img {
+
             width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
             display: block;
-
-            border-radius: 5px;
         }
 
 
-        /* ================================
-           FINDINGS
-        ================================= */
+        .dashboard-info {
 
-        .findings {
-            background: #f5f5f5;
+            padding: 22px;
         }
 
-        .findings-grid {
-            display: grid;
 
-            grid-template-columns: repeat(3, 1fr);
+        .dashboard-number {
 
-            gap: 20px;
-        }
+            color:
+                var(--burgundy);
 
-        .finding-card {
-            background: white;
+            font-size: 11px;
 
-            padding: 30px;
-
-            border-radius: 8px;
-
-            border-left: 4px solid #a52b2b;
-
-            border-top: 1px solid #e5e5e5;
-            border-right: 1px solid #e5e5e5;
-            border-bottom: 1px solid #e5e5e5;
-        }
-
-        .finding-number {
-            color: #a52b2b;
-
-            font-size: 28px;
             font-weight: 700;
 
-            margin-bottom: 10px;
-        }
+            letter-spacing: 1px;
 
-        .finding-card h3 {
-            margin-bottom: 10px;
-        }
-
-        .finding-card p {
-            color: #666;
-            font-size: 14px;
+            text-transform: uppercase;
         }
 
 
-        /* ================================
-           TECHNOLOGIES
-        ================================= */
+        .dashboard-info h3 {
 
-        .technology-list {
-            display: flex;
+            margin-top: 5px;
 
-            justify-content: center;
-            flex-wrap: wrap;
+            color:
+                var(--text-dark);
 
-            gap: 12px;
+            font-size: 19px;
         }
 
-        .technology {
-            padding: 10px 18px;
+
+        .dashboard-info p {
+
+            margin-top: 7px;
+
+            color:
+                var(--text-medium);
+
+            font-size: 13px;
+        }
+
+        .dashboard-insight {
+            position: relative;
+            width: 100%;
+            margin: 20px 0 0 0;
+        }
+
+
+        /* =====================================================
+           KEY FINDINGS
+        ===================================================== */
+
+        .findings {
+
+            background:
+                var(--background);
+        }
+
+
+        .findings-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 18px;
+        }
+
+
+        .finding-card {
+
+            padding: 27px;
 
             background: white;
 
-            border: 1px solid #ddd;
+            border:
+                1px solid var(--border);
+
+            border-left:
+                4px solid var(--burgundy);
+
+            border-radius: 7px;
+        }
+
+
+        .finding-value {
+
+            color:
+                var(--burgundy);
+
+            font-size: 27px;
+
+            font-weight: 700;
+
+            margin-bottom: 5px;
+        }
+
+
+        .finding-card h3 {
+
+            margin-bottom: 7px;
+
+            color:
+                var(--text-dark);
+
+            font-size: 17px;
+        }
+
+
+        .finding-card p {
+
+            color:
+                var(--text-medium);
+
+            font-size: 13px;
+        }
+
+
+        /* =====================================================
+           QUESTIONS
+        ===================================================== */
+
+        .questions {
+
+            background: white;
+        }
+
+
+        .question-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 18px;
+        }
+
+
+        .question-card {
+
+            padding: 25px;
+
+            background:
+                #fafafa;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 7px;
+        }
+
+
+        .question-number {
+
+            color:
+                var(--burgundy);
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            letter-spacing: 1px;
+        }
+
+
+        .question-card h3 {
+
+            margin-top: 10px;
+
+            font-size: 16px;
+
+            line-height: 1.35;
+        }
+
+
+        .question-card p {
+
+            margin-top: 10px;
+
+            color:
+                var(--text-medium);
+
+            font-size: 12px;
+        }
+
+
+        /* =====================================================
+           TECHNOLOGY
+        ===================================================== */
+
+        .technology {
+
+            background:
+                var(--background);
+        }
+
+
+        .technology-list {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+            gap: 11px;
+        }
+
+
+        .technology-tag {
+
+            padding:
+                10px 18px;
+
+            background: white;
+
+            border:
+                1px solid var(--border);
 
             border-radius: 30px;
 
-            font-size: 13px;
-            font-weight: 600;
-
             color: #555;
+
+            font-size: 12px;
+
+            font-weight: 600;
         }
 
 
-        /* ================================
-           FOOTER
-        ================================= */
+        /* =====================================================
+           CTA
+        ===================================================== */
 
-        footer {
-            background: #242424;
-            color: #ddd;
+        .cta {
 
-            padding: 45px 0;
+            padding:
+                90px 0;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    var(--dark-burgundy),
+                    var(--burgundy)
+                );
+
+            color: white;
 
             text-align: center;
         }
 
-        footer h3 {
-            color: white;
-            margin-bottom: 8px;
+
+        .cta h2 {
+
+            font-size: 36px;
+
+            margin-bottom: 12px;
         }
+
+
+        .cta p {
+
+            max-width: 600px;
+
+            margin:
+                0 auto 28px;
+
+            color:
+                #f2dede;
+
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            padding:
+                35px 0;
+
+            background:
+                #242424;
+
+            text-align: center;
+        }
+
+
+        footer h3 {
+
+            color: white;
+
+            font-size: 15px;
+        }
+
 
         footer p {
-            color: #aaa;
-            font-size: 13px;
+
+            margin-top: 5px;
+
+            color: #999;
+
+            font-size: 11px;
         }
 
 
-        /* ================================
+        /* =====================================================
            RESPONSIVE
-        ================================= */
+        ===================================================== */
 
-        @media (max-width: 900px) {
+        @media (max-width: 950px) {
 
             .kpi-grid {
-                grid-template-columns: repeat(2, 1fr);
+
+                grid-template-columns:
+                    repeat(2, 1fr);
             }
 
-            .overview-grid {
-                grid-template-columns: 1fr;
+
+            .question-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
             }
 
-            .findings-grid {
-                grid-template-columns: 1fr;
-            }
+        }
+
+
+        @media (max-width: 750px) {
 
             .nav-links {
+
                 display: none;
             }
 
-        }
 
-        @media (max-width: 550px) {
+            .overview-grid,
 
-            .kpi-grid {
-                grid-template-columns: 1fr;
+            .dashboard-grid,
+
+            .findings-grid {
+
+                grid-template-columns:
+                    1fr;
             }
+
 
             .hero {
-                min-height: 600px;
+
+                min-height:
+                    600px;
             }
+
 
             .hero h1 {
-                font-size: 42px;
+
+                font-size:
+                    45px;
             }
 
-            .hero-description {
-                font-size: 16px;
+
+            .section-heading h2 {
+
+                font-size:
+                    30px;
             }
+
+        }
+
+
+        @media (max-width: 520px) {
+
+            .kpi-grid,
+
+            .question-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .hero h1 {
+
+                font-size:
+                    38px;
+            }
+
 
             section {
-                padding: 70px 0;
+
+                padding:
+                    70px 0;
             }
 
         }
 
     </style>
+
 </head>
 
 
 <body>
 
 
-<!-- ================================
+<!-- =====================================================
      NAVIGATION
-================================= -->
+===================================================== -->
 
 <nav class="navbar">
 
     <div class="container nav-content">
 
-        <div class="logo">
+        <a href="#" class="logo">
             HOTEL ANALYTICS
-        </div>
+        </a>
 
         <div class="nav-links">
 
-            <a href="#overview">Overview</a>
+            <a href="#overview">
+                Overview
+            </a>
 
-            <a href="#dashboard">Dashboard</a>
+            <a href="#dashboards">
+                Dashboards
+            </a>
 
-            <a href="#findings">Findings</a>
+            <a href="#findings">
+                Findings
+            </a>
 
-            <a href="#tools">Tools</a>
+            <a href="#tools">
+                Tools
+            </a>
+
+            <a href="#contact">
+                Project
+            </a>
+
+            <a href="https://github.com/Fatima-Zehra-DA"   target="_blank"
+                   >
+                Profile
+            </a>
 
         </div>
 
@@ -610,9 +1240,9 @@
 
 
 
-<!-- ================================
+<!-- =====================================================
      HERO
-================================= -->
+===================================================== -->
 
 <header class="hero">
 
@@ -620,33 +1250,72 @@
 
         <div class="hero-content">
 
-            <div class="eyebrow">
+            <div class="hero-label">
                 Python • Power BI • Data Analytics
             </div>
 
+
             <h1>
-                Hotel Booking<br>
-                <span>Cancellation Analysis</span>
+
+                Hotel Booking
+
+                <br>
+
+                <span>
+                    Cancellation Analysis
+                </span>
+
             </h1>
+
 
             <p class="hero-description">
 
                 An end-to-end data analytics project exploring
-                booking patterns, cancellation behavior and
-                the factors associated with hotel booking cancellations.
+                booking patterns, cancellation behavior and the
+                factors associated with hotel booking cancellations.
 
             </p>
 
+
+            <div class="hero-meta">
+
+                <span class="hero-tag">
+                    Data Cleaning
+                </span>
+
+                <span class="hero-tag">
+                    Exploratory Data Analysis
+                </span>
+
+                <span class="hero-tag">
+                    Feature Engineering
+                </span>
+
+                <span class="hero-tag">
+                    Power BI
+                </span>
+
+            </div>
+
+
             <div class="hero-buttons">
 
-                <a href="#dashboard" class="btn btn-primary">
-                    View Dashboard
+                <a href="#dashboards"
+                   class="btn btn-primary">
+
+                    Explore Dashboard
+
                 </a>
 
-                <a href="https://github.com/Fatima-Zehra-DA"
-                   class="btn btn-outline"
-                   target="_blank">
+
+                <!-- Replace YOUR-REPOSITORY with your actual repo -->
+
+                <a href="https://github.com/Fatima-Zehra-DA/Hotel-Booking-Cancellation-Analysis-Python-PowerBI"
+                   target="_blank"
+                   class="btn btn-outline">
+
                     GitHub Repository
+
                 </a>
 
             </div>
@@ -659,9 +1328,9 @@
 
 
 
-<!-- ================================
+<!-- =====================================================
      KPI CARDS
-================================= -->
+===================================================== -->
 
 <div class="kpi-section">
 
@@ -669,7 +1338,12 @@
 
         <div class="kpi-grid">
 
+
             <div class="kpi-card">
+
+                <div class="kpi-icon">
+                    ◉
+                </div>
 
                 <div class="kpi-label">
                     Total Bookings
@@ -679,8 +1353,8 @@
                     119K
                 </div>
 
-                <div class="kpi-description">
-                    Hotel bookings analyzed
+                <div class="kpi-note">
+                    Bookings analyzed
                 </div>
 
             </div>
@@ -688,22 +1362,30 @@
 
             <div class="kpi-card">
 
+                <div class="kpi-icon">
+                    ×
+                </div>
+
                 <div class="kpi-label">
-                    Cancelled Bookings
+                    Cancelled
                 </div>
 
                 <div class="kpi-value">
                     44K
                 </div>
 
-                <div class="kpi-description">
-                    Cancelled reservations
+                <div class="kpi-note">
+                    Cancelled bookings
                 </div>
 
             </div>
 
 
             <div class="kpi-card">
+
+                <div class="kpi-icon">
+                    %
+                </div>
 
                 <div class="kpi-label">
                     Cancellation Rate
@@ -713,7 +1395,7 @@
                     37.13%
                 </div>
 
-                <div class="kpi-description">
+                <div class="kpi-note">
                     Overall cancellation rate
                 </div>
 
@@ -721,6 +1403,10 @@
 
 
             <div class="kpi-card">
+
+                <div class="kpi-icon">
+                    ✓
+                </div>
 
                 <div class="kpi-label">
                     Non-Cancelled
@@ -730,11 +1416,12 @@
                     75K
                 </div>
 
-                <div class="kpi-description">
-                    Completed bookings
+                <div class="kpi-note">
+                    62.87% of bookings
                 </div>
 
             </div>
+
 
         </div>
 
@@ -744,32 +1431,39 @@
 
 
 
-<!-- ================================
-     OVERVIEW
-================================= -->
+<!-- =====================================================
+     PROJECT OVERVIEW
+===================================================== -->
 
 <section class="overview" id="overview">
 
     <div class="container">
 
+
         <div class="section-heading">
 
-            <span>Project Overview</span>
+            <div class="section-label">
+                Project Overview
+            </div>
 
             <h2>
-                From Raw Data to Business Insights
+                Understanding Booking Cancellations
             </h2>
 
             <p>
-                The analysis combines Python-based data preparation
-                and exploratory analysis with Power BI visualization
-                to investigate hotel booking cancellations.
+
+                The project examines hotel booking data to identify
+                patterns associated with cancellations across hotel
+                types, lead-time groups, deposit types and booking
+                channels.
+
             </p>
 
         </div>
 
 
         <div class="overview-grid">
+
 
             <div class="info-card">
 
@@ -778,10 +1472,11 @@
                 </h3>
 
                 <p>
+
                     What patterns are associated with hotel booking
                     cancellations, and how do cancellation rates
-                    differ across hotel types, lead-time groups,
-                    deposit types and booking channels?
+                    differ across different booking characteristics?
+
                 </p>
 
             </div>
@@ -794,16 +1489,21 @@
                 </h3>
 
                 <p>
-                    The project uses data cleaning, feature grouping,
-                    exploratory data analysis and interactive Power BI
-                    dashboards to identify cancellation patterns
-                    and communicate findings clearly.
+
+                    The analysis combines Python-based data cleaning,
+                    feature engineering and exploratory analysis with
+                    Power BI for interactive visualization and
+                    business-focused storytelling.
+
                 </p>
 
             </div>
 
+
         </div>
 
+
+        <!-- WORKFLOW -->
 
         <div class="workflow">
 
@@ -811,34 +1511,52 @@
                 Raw Data
             </div>
 
-            <div class="arrow">→</div>
+            <div class="workflow-arrow">
+                →
+            </div>
+
+            <div class="workflow-step">
+                Data Inspection
+            </div>
+
+            <div class="workflow-arrow">
+                →
+            </div>
 
             <div class="workflow-step">
                 Data Cleaning
             </div>
 
-            <div class="arrow">→</div>
+            <div class="workflow-arrow">
+                →
+            </div>
 
             <div class="workflow-step">
                 Feature Engineering
             </div>
 
-            <div class="arrow">→</div>
+            <div class="workflow-arrow">
+                →
+            </div>
 
             <div class="workflow-step">
                 EDA
             </div>
 
-            <div class="arrow">→</div>
+            <div class="workflow-arrow">
+                →
+            </div>
 
             <div class="workflow-step">
                 Power BI
             </div>
 
-            <div class="arrow">→</div>
+            <div class="workflow-arrow">
+                →
+            </div>
 
             <div class="workflow-step">
-                Business Insights
+                Insights
             </div>
 
         </div>
@@ -849,39 +1567,230 @@
 
 
 
-<!-- ================================
-     DASHBOARD
-================================= -->
+<!-- =====================================================
+     DASHBOARD PAGES
+===================================================== -->
 
-<section class="dashboard-section" id="dashboard">
+<section class="dashboards" id="dashboards">
 
     <div class="container">
 
+
         <div class="section-heading">
 
-            <span>Interactive Dashboard</span>
+            <div class="section-label">
+                Power BI Dashboard
+            </div>
 
             <h2>
-                Cancellation Overview
+                Explore the Analysis
             </h2>
 
             <p>
-                Explore booking volume, cancellation rates,
-                lead-time patterns, hotel type and deposit behavior.
+
+              Four analytical perspectives designed to move from overall
+               cancellation patterns to deeper booking, customer, and pricing analysis
+                - along with a dedicated Key Insights dashboard summarizing the main findings.
+
+
             </p>
 
         </div>
 
 
-        <div class="dashboard-preview">
+        <div class="dashboard-grid">
 
 
-            <img
-                src="Images/D1-Overview.png"
-                alt="Hotel Booking Cancellation Analysis Power BI Dashboard"
-            >
+            <!-- DASHBOARD 1 -->
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-image">
+
+                    <img
+                        src="Images/1-overview.png"
+                        alt="Hotel Booking Cancellation Analysis Overview Dashboard"
+                    >
+
+                </div>
+
+
+                <div class="dashboard-info">
+
+                    <div class="dashboard-number">
+                        Dashboard 01
+                    </div>
+
+                    <h3>
+                        Overview
+                    </h3>
+
+                    <p>
+
+                        Overall booking volume, cancellation rate,
+                        hotel performance, lead-time patterns and
+                        deposit-type analysis.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DASHBOARD 2 -->
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-image">
+
+                    <img
+                        src="Images/2-cancellation-drivers.png"
+                        alt="Cancellation Drivers Dashboard"
+                    >
+
+                </div>
+
+
+                <div class="dashboard-info">
+
+                    <div class="dashboard-number">
+                        Dashboard 02
+                    </div>
+
+                    <h3>
+                        Cancellation Drivers
+                    </h3>
+
+                    <p>
+
+                        Deeper analysis of variables associated
+                        with booking cancellation behavior.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DASHBOARD 3 -->
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-image">
+
+                    <img
+                        src="Images/3-channel-customer-analysis.png"
+                        alt="Channel and Customer Analysis Dashboard"
+                    >
+
+                </div>
+
+
+                <div class="dashboard-info">
+
+                    <div class="dashboard-number">
+                        Dashboard 03
+                    </div>
+
+                    <h3>
+                        Channel & Customer Analysis
+                    </h3>
+
+                    <p>
+
+                        Comparison of distribution channels,
+                        market segments and customer characteristics.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DASHBOARD 4 -->
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-image">
+
+                    <img
+                        src="Images/4-Booking-Pricing-Insights.png"
+                        alt="Booking and Pricing Insights Dashboard"
+                    >
+
+                </div>
+
+
+                <div class="dashboard-info">
+
+                    <div class="dashboard-number">
+                        Dashboard 04
+                    </div>
+
+                    <h3>
+                        Booking & Pricing Insights
+                    </h3>
+
+                    <p>
+
+                        Analysis of booking characteristics and
+                        pricing-related patterns across cancellations.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            
+
 
         </div>
+
+        
+               <!-- DASHBOARD 5 -->
+
+            <div class="dashboard-card dashboard-insight">
+
+                <div class="dashboard-image">
+
+                    <img
+                        src="Images/5-key-insights.png"
+                        alt="Booking and Pricing Insights Dashboard"
+                    >
+
+                </div>
+
+
+                <div class="dashboard-info">
+
+                    <div class="dashboard-number">
+                        Dashboard 05
+                    </div>
+
+                    <h3>
+                        Key Insights
+                    </h3>
+
+                    <p>
+
+                        Highlights the key patterns and findings from the analysis, 
+                        including cancellation trends, lead-time behavior, deposit types, 
+                        distribution channels, and customer segments.
+
+                    </p>
+
+                </div>
+
+            </div>
+
 
     </div>
 
@@ -889,24 +1798,30 @@
 
 
 
-<!-- ================================
-     FINDINGS
-================================= -->
+<!-- =====================================================
+     KEY FINDINGS
+===================================================== -->
 
 <section class="findings" id="findings">
 
     <div class="container">
 
+
         <div class="section-heading">
 
-            <span>Key Findings</span>
+            <div class="section-label">
+                Key Findings
+            </div>
 
             <h2>
                 What the Analysis Reveals
             </h2>
 
             <p>
-                Selected findings from the booking and cancellation analysis.
+
+                Selected findings from the hotel booking
+                cancellation analysis.
+
             </p>
 
         </div>
@@ -917,17 +1832,19 @@
 
             <div class="finding-card">
 
-                <div class="finding-number">
+                <div class="finding-value">
                     37.13%
                 </div>
 
                 <h3>
-                    Overall Cancellation
+                    Overall Cancellation Rate
                 </h3>
 
                 <p>
-                    Approximately 37% of all analyzed bookings
+
+                    44K of approximately 119K bookings
                     were cancelled.
+
                 </p>
 
             </div>
@@ -935,7 +1852,7 @@
 
             <div class="finding-card">
 
-                <div class="finding-number">
+                <div class="finding-value">
                     41.71%
                 </div>
 
@@ -944,8 +1861,10 @@
                 </h3>
 
                 <p>
-                    City Hotel bookings show a higher cancellation
+
+                    City Hotel bookings had a higher cancellation
                     rate than Resort Hotel bookings.
+
                 </p>
 
             </div>
@@ -953,17 +1872,19 @@
 
             <div class="finding-card">
 
-                <div class="finding-number">
+                <div class="finding-value">
                     99.36%
                 </div>
 
                 <h3>
-                    Non-Refund Deposits
+                    Non-Refund Deposit
                 </h3>
 
                 <p>
-                    The Non-Refund deposit category has an exceptionally
-                    high cancellation rate in this dataset.
+
+                    The Non-Refund deposit category recorded an
+                    exceptionally high cancellation rate.
+
                 </p>
 
             </div>
@@ -971,56 +1892,23 @@
 
             <div class="finding-card">
 
-                <div class="finding-number">
+                <div class="finding-value">
                     180+ Days
                 </div>
 
                 <h3>
-                    Long Lead Time
+                    Longer Lead Time
                 </h3>
 
                 <p>
-                    Cancellation rates increase substantially across
-                    longer lead-time groups.
+
+                    Cancellation rates were substantially higher
+                    among bookings made far in advance.
+
                 </p>
 
             </div>
 
-
-            <div class="finding-card">
-
-                <div class="finding-number">
-                    27.98%
-                </div>
-
-                <h3>
-                    Resort Hotel
-                </h3>
-
-                <p>
-                    Resort Hotel bookings show a lower cancellation
-                    rate than City Hotel bookings in this dataset.
-                </p>
-
-            </div>
-
-
-            <div class="finding-card">
-
-                <div class="finding-number">
-                    75K
-                </div>
-
-                <h3>
-                    Non-Cancelled
-                </h3>
-
-                <p>
-                    Around 63% of bookings remained non-cancelled
-                    in the analyzed dataset.
-                </p>
-
-            </div>
 
         </div>
 
@@ -1030,20 +1918,128 @@
 
 
 
-<!-- ================================
-     TOOLS
-================================= -->
+<!-- =====================================================
+     ANALYTICAL QUESTIONS
+===================================================== -->
 
-<section id="tools">
+<section class="questions">
 
     <div class="container">
 
+
         <div class="section-heading">
 
-            <span>Technology Stack</span>
+            <div class="section-label">
+                Analysis Framework
+            </div>
 
             <h2>
-                Tools Used
+                Questions Behind the Dashboard
+            </h2>
+
+        </div>
+
+
+        <div class="question-grid">
+
+
+            <div class="question-card">
+
+                <div class="question-number">
+                    01
+                </div>
+
+                <h3>
+                    What is the overall cancellation level?
+                </h3>
+
+                <p>
+                    Establish the baseline cancellation rate
+                    and booking outcome.
+                </p>
+
+            </div>
+
+
+            <div class="question-card">
+
+                <div class="question-number">
+                    02
+                </div>
+
+                <h3>
+                    Which booking characteristics show different cancellation patterns?
+                </h3>
+
+                <p>
+                    Compare hotel type, lead time and
+                    deposit type.
+                </p>
+
+            </div>
+
+
+            <div class="question-card">
+
+                <div class="question-number">
+                    03
+                </div>
+
+                <h3>
+                    How do booking channels and customer groups differ?
+                </h3>
+
+                <p>
+                    Examine channel and customer-level
+                    cancellation patterns.
+                </p>
+
+            </div>
+
+
+            <div class="question-card">
+
+                <div class="question-number">
+                    04
+                </div>
+
+                <h3>
+                    What booking and pricing patterns are visible?
+                </h3>
+
+                <p>
+                    Explore booking characteristics and
+                    pricing-related relationships.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TOOLS
+===================================================== -->
+
+<section class="technology" id="tools">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <div class="section-label">
+                Technology Stack
+            </div>
+
+            <h2>
+                Tools & Technologies
             </h2>
 
         </div>
@@ -1051,33 +2047,45 @@
 
         <div class="technology-list">
 
-            <div class="technology">
+            <span class="technology-tag">
                 Python
-            </div>
+            </span>
 
-            <div class="technology">
+            <span class="technology-tag">
                 Pandas
-            </div>
+            </span>
 
-            <div class="technology">
+            <span class="technology-tag">
                 Matplotlib
-            </div>
+            </span>
 
-            <div class="technology">
+            <span class="technology-tag">
                 Seaborn
-            </div>
+            </span>
 
-            <div class="technology">
+            <span class="technology-tag">
                 Power BI
-            </div>
+            </span>
 
-            <div class="technology">
+            <span class="technology-tag">
                 DAX
-            </div>
+            </span>
 
-            <div class="technology">
+            <span class="technology-tag">
                 Power Query
-            </div>
+            </span>
+
+            <span class="technology-tag">
+                Data Cleaning
+            </span>
+
+            <span class="technology-tag">
+                Exploratory Data Analysis
+            </span>
+
+            <span class="technology-tag">
+                Data Visualization
+            </span>
 
         </div>
 
@@ -1087,21 +2095,65 @@
 
 
 
-<!-- ================================
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="cta" id="contact">
+
+    <div class="container">
+
+        <h2>
+            Explore the Full Project
+        </h2>
+
+        <p>
+
+            View the complete analysis, Python notebook,
+            Power BI dashboards and project documentation
+            in the GitHub repository.
+
+        </p>
+
+
+        <a
+            href="https://github.com/Fatima-Zehra-DA/Hotel-Booking-Cancellation-Analysis-Python-PowerBI"
+            target="_blank"
+            class="btn btn-primary">
+
+            View GitHub Repository
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
      FOOTER
-================================= -->
+===================================================== -->
 
 <footer>
 
-    <h3>
-        Hotel Booking Cancellation Analysis
-    </h3>
+    <div class="container">
 
-    <p>
-        Data Analytics Project by Fatima Zehra
-    </p>
+        <h3>
+            Hotel Booking Cancellation Analysis
+        </h3>
+
+        <p>
+            Data Analytics Project by Fatima Zehra | 2026
+        </p>
+
+    </div>
 
 </footer>
+
+
+
+
 
 
 <script>
@@ -1143,5 +2195,17 @@
   });
 </script>
 
+
+
+
+
 </body>
+
 </html>
+
+
+
+
+
+
+
