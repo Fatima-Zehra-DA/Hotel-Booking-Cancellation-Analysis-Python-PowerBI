@@ -499,6 +499,9 @@ Overall, the project focuses on an important principle of data analysis:
   </tr>
 </table>
 
+---
+
+
 ## 👩‍💻 Author
 
 **Fatima Zehra**
