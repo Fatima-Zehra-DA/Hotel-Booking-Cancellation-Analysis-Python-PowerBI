@@ -6,9 +6,6 @@ The analysis examines how cancellation rates vary across **hotel types, lead tim
 
 The goal is to move beyond overall cancellation percentages and identify patterns that could help hotels better understand cancellation risk.
 
-## Project Status
-🚧 In Progress
-
 ## 📌 Project Overview
 
 Hotel cancellations can affect room availability, planning, and operational decision-making.
@@ -510,9 +507,9 @@ Aspiring Data Analyst focused on transforming data into meaningful business insi
 
 ### Connect with me
 
-* **GitHub Page:** [Fatima-Zehra-DA](https://fatima-zehra-da.github.io/Hotel-Booking-Cancellation-Analysis-Python-PowerBI/?utm_source=chatgpt.com)
-* **LinkedIn:** [Fatima Zehra](https://www.linkedin.com/in/fatima-zehra-308b85358/)
-* **Tableau Public:** [Fatima Zehra](https://public.tableau.com/app/profile/fatima.zehra7709/vizzes)
-* **Kaggle:** [Fatima Zehra](https://www.kaggle.com/fatimazehra2305/)
-
----
+[![GitHub Profile](https://img.shields.io/badge/GitHub-Fatima_Zehra-brightgreen)](https://github.com/Fatima-Zehra-DA)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/fatima-zehra-308b85358/)
+[![Tableau](https://img.shields.io/badge/Tableau-Public-orange)](https://public.tableau.com/app/profile/fatima.zehra7709/vizzes)
+[![Kaggle](https://img.shields.io/badge/Kaggle-Profile-cyan)](https://www.kaggle.com/fatimazehra2305/)
+[![Gmail](https://img.shields.io/badge/Gmail-Email-red)](mailto:fatimazehra2305@gmail.com)
+ [![HackerRank](https://img.shields.io/badge/HackerRank-SQL_Gold-brightgreen)](https://www.hackerrank.com/fatimazehra2305)
