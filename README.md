@@ -498,6 +498,11 @@ Overall, the project focuses on an important principle of data analysis:
 
 ---
 
+## ⭐ Feedback
+
+I’d be happy to hear feedback, suggestions on how I can make the analysis or dashboard experience even better.
+
+---
 
 ## 👩‍💻 Author
 
