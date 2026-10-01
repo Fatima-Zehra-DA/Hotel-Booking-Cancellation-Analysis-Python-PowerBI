@@ -14,6 +14,7 @@ less than ideal hotel room use. Consequently, lowering cancellation rates is bot
 primary goal in order to increase their efficiency in generating revenue, and for us to
 offer thorough business advice to address this problem.
 
+---
 
 ## 📌 Project Overview
 
