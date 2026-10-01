@@ -8,13 +8,7 @@ How cancellation rates vary across **hotel types, lead time, deposit types, dist
 The goal is to move beyond overall cancellation percentages and identify patterns that could help hotels better understand cancellation risk.
 
 ## ⚠️ Business Problem
-In recent years, City Hotel and Resort Hotel have seen high cancellation rates. Each
-hotel is now dealing with a number of issues as a result, including fewer revenues and
-less than ideal hotel room use. Consequently, lowering cancellation rates is both hotels'
-primary goal in order to increase their efficiency in generating revenue, and for us to
-offer thorough business advice to address this problem.
-
----
+In recent years, City Hotel and Resort Hotel have seen high cancellation rates. Each hotel is now dealing with a number of issues as a result, including fewer revenues and less than ideal hotel room use. Consequently, lowering cancellation rates is both hotel's primary goal in order to increase their efficiency in generating revenue, and for us to offer thorough business advice to address this problem.
 
 ## 📌 Project Overview
 
