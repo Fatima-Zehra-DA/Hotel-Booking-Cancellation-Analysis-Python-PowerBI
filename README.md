@@ -1,10 +1,19 @@
-# 🏨 Hotel Booking Cancellation Analysis | Python
+# 🏨 Hotel Booking Cancellation Analysis | Python , Power BI
 
 An exploratory data analysis project focused on understanding **hotel booking cancellation patterns** using Python.
 
-The analysis examines how cancellation rates vary across **hotel types, lead time, deposit types, distribution channels, and market segments**, with additional investigation into the unusually high cancellation rate observed for **Non Refund bookings**.
+
+How cancellation rates vary across **hotel types, lead time, deposit types, distribution channels, and market segments**, with additional investigation into the unusually high cancellation rate observed for **Non Refund bookings**.
 
 The goal is to move beyond overall cancellation percentages and identify patterns that could help hotels better understand cancellation risk.
+
+## ⚠️ Business Problem
+In recent years, City Hotel and Resort Hotel have seen high cancellation rates. Each
+hotel is now dealing with a number of issues as a result, including fewer revenues and
+less than ideal hotel room use. Consequently, lowering cancellation rates is both hotels'
+primary goal in order to increase their efficiency in generating revenue, and for us to
+offer thorough business advice to address this problem.
+
 
 ## 📌 Project Overview
 
